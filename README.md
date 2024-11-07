@@ -41,9 +41,9 @@ Ce dépôt contient mon projet final intitulé **"Nouilles"**, réalisé pour va
 
 1. **Cloner le dépôt** :
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone <https://github.com/AlexandreTheDwarf/Nouilles-VandewieleAlexandre.git>
    ```
 
 2. **Publier ici :**
 
-    [Site publié](URL_DE_TA_IMAGE_DE_REFERENCE)    
+    [Site publié](https://alexandrethedwarf.github.io/Nouilles-VandewieleAlexandre/)    

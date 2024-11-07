@@ -177,7 +177,14 @@ section{
         border: solid 1px lightgray;
     }
 
-    .container > div > h3{
+    .container > div > .icon-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container > div > div > h3{
         color: #695AA6;
         margin-top: 1rem;
     }
@@ -209,6 +216,12 @@ section{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* Suppression pour éviter l'affichage quand pas animation*/
+
+    .content{
+        display: none;
     }
 
     .portfolio > .container > div {
@@ -695,8 +708,16 @@ section{
         display:none;
     }
 
-    .div-text{
-        font-size: 0.5rem;
+    .div-text-header > h2{
+        font-size: 1rem;
+    }  
+    
+    .blog > .container > .card > .div-text > .div-text-header > div{
+        width: 90%;
+    } 
+
+    .div-text-body > p{
+        font-size: 0.60rem;
         right:0;
     }
 
@@ -783,4 +804,114 @@ section{
     footer > .div-social{
         width: 40%;
     }
+}
+
+/* Media query pour les animations pour que elle soit dispo que sur desktop*/
+
+@media (min-width: 1024px){
+
+    /* Animation portfolio trouver une ressemblant sur codepen que j'ai adapté car faisait un effet vertical*/
+
+    .image {
+        position: relative;
+    }
+    
+    .portfolio > .container > .image > img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .image > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.6s;
+        z-index: 1;
+    }
+
+    .image > .content > h2{
+        font-family: Sancoale-bold;
+        color: #695AA6;
+    }
+
+    .image > .content > p{
+        margin-top: 1rem;
+        font-family: Sancoale-bold;
+    }
+    
+    .image:hover > .content {
+        opacity: 0.75;
+    }
+    
+    /* Pseudo-élément pour l'effet de fond */
+    .image > .content::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background-color: #DCD9E5;
+        transition: width 0.6s ease, height 0.6s ease;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    
+    .image:hover > .content::before {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .content > * {
+        transform: scale(0.5);
+        transition: transform 0.6s ease;
+    }
+    
+    .image:hover > .content > * {
+        transform: scale(1);
+    }    
+
+    /* Animation portfolio fin */
+
+    /* Animation service début */
+    .card-serv .content {
+        display: flex; /* Affiche le contenu en mode desktop */
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    /* Groupe SVG et h3 pour qu'ils se déplacent ensemble */
+    .card-serv .icon-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.6s ease;
+        transform: translateY(15%) scale(1);
+    }
+
+    /* Au survol, faire glisser SVG et h3 vers le haut */
+    .card-serv:hover .icon-title {
+        transform: translateY(-15%) scale(0.75);
+    }
+
+    /* Apparition en douceur du contenu depuis le bas */
+    .card-serv:hover .content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Animation service fin */
 }
