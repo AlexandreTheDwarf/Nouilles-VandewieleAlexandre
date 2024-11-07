@@ -1,0 +1,786 @@
+@font-face {
+    font-family: Sancoale;
+    src: url("../font/Sancoale Softened.ttf");
+}
+
+@font-face {
+    font-family: Sancoale-bold;
+    src: url("../font/Sancoale Softened Bold.ttf");
+    font-weight: bold;
+  }
+
+*{
+    margin: 0;
+    padding : 0;
+    font-family: Sancoale;
+}
+
+body{
+    width: 100vw;
+    max-height: 800vh;
+}
+
+h2 {
+    font-family: Sancoale-bold;
+}
+
+section{
+    margin-top: 2rem;
+}
+
+
+/* header début */
+    header{
+        height: 80vh;
+        width: 100%;
+        /*Background CSS début*/
+            background-image: url(../img/header.jpg);
+            background-repeat: no-repeat;
+            background-position-y: 45%;
+            background-size: cover;
+        /*Background CSS fin*/
+        /* Display début */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+
+    header > div {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    header > div > h1 {
+        color: #595A60;
+        font-size: 48px;
+    }
+
+    header > div > h2 {
+        color : #41454C;
+        font-size: 54px;
+        margin-bottom: 5px;
+    }
+
+    header > div > p {
+        color: #3C3C3E;
+        margin-bottom: 5px;
+        letter-spacing: .2rem;
+    }
+
+    header > div > button {
+        background-color: #695AA6;
+        border: none;
+        border-radius: 15px;
+        padding: 2% 3% 2% 3%;
+        color: whitesmoke;
+        margin-top: 5%;
+    }
+
+/* header fin */
+
+/* section about début */
+
+    .about{
+        width: 80%;
+        height: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about > div {
+        height: 100%;
+    }
+
+    .about-div-one {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-div-one > img{
+        height: 100%;
+    }
+
+    .about-div-two{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about-div-two > h2 {
+        color : #695AA6;
+        margin-top: 0.5rem;
+    }
+
+    .about-div-two > div {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-div-two > button {
+        background-color: none;
+        color: #695AA6;
+        border-color: #695AA6;
+        border-radius: 20px;
+        padding: 1.5% 3% 1.5% 3%;
+    }
+
+/* section about fin */
+
+/* section service début */
+
+    .service{
+        width: 80%;
+        height: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service > h2 {
+        color: #695AA6;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .service > .container{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service > .container > div{
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px lightgray;
+    }
+
+    .container > div > h3{
+        color: #695AA6;
+        margin-top: 1rem;
+    }
+
+/* section service fin */
+
+/* section Portfolio début */
+
+    .portfolio{
+        width: 80%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio > h2{
+        color: #695AA6;
+        font-size: 2rem;
+    }
+
+    .portfolio > .container {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portfolio > .container > div {
+        width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio > .container > div >img {
+        width: 95%;
+    }
+
+/* section Portfolio fin */
+
+/* section Pricing début */
+
+    .pricing{
+        width: 80%;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing > h2{
+        color: #695AA6;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .pricing > .container{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing > .container > div {
+        width: 33%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: solid 1px lightgray;
+    }
+
+    .pricing > .container > div > div > h2 {
+        color: #695AA6;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .pricing-div-body{
+        height: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pricing-div-price > p {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .red-cross{
+        color:red;
+        font-weight: bold;
+    }
+
+    .pricing-div-footer > button{
+        display: flex;
+        background-color: #695AA6;
+        font-size: large;
+        border: none;
+        padding: 10%;
+        color: whitesmoke;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+/* section Pricing fin */
+
+/* section work with me début */
+
+    .work{
+        width: 100%;
+        height: 20vh;
+        background-color: #695AA6;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+    .work > div {
+        width: 45%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .work > div > button{
+        border: none;
+        padding: 2% 3% 2% 3%;
+        border-radius:5px;
+        font-family: Sancoale-bold;
+        margin-right: 12rem;
+    }
+
+/* section work with me fin */
+
+/* section Testmonial début */
+
+    .testmonial{
+        width: 80%;
+        height: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testmonial > h2{
+        color: #695AA6;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .testmonial > .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .testmonial > .container > .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        border: solid 1px lightgrey;
+        padding: 1rem;
+    }
+
+    .testmonial > .container > .card > .div-img{
+        height: 100%;
+        position: relative;
+        right: 3.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testmonial > .container > .card > .div-img > img{
+        border: solid 3px white;
+        width: 80%;
+        border-radius: 50%;
+    }
+    
+    .div-text{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        position: relative;
+        right: 3rem;
+    }
+
+    .div-text > p{
+        line-height: 1.6;
+    }
+
+    .div-text> h2{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #695AA6;
+    }
+
+
+/* section Testmonial fin */
+
+/* section Blog début */
+
+    .blog{
+        width: 90%;
+        height: 120vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog > h2{
+        color: #695AA6;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .blog > .container{
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog > .container > .card{
+        width: 100%;
+        height: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 1px lightgray;
+    }
+
+    .blog > .container > .card > .div-img-one{
+        width: 30%;
+        height: 100%;
+        background-image: url("../img/img-1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog > .container > .card > .div-img-two{
+        width: 30%;
+        height: 100%;
+        background-image: url("../img/img-2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .blog > .container > .card > .div-text{
+        width: 63%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog > .container > .card > .div-text > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-header{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-header > div{
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-header > h2{
+        color: #695AA6;
+    }   
+
+    .blog > .container > .card > .div-text > .div-text-body{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 1.6;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-body > .text-body-bold{
+        font-family: Sancoale-bold;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-footer{
+        height: 10%;
+        width: 100%;
+        color: #695AA6;
+        font-family: Sancoale-bold;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-header > div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+/* section Blog fin */
+
+/*  section Contact début */
+    .contact{
+        width: 90%;
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .contact > h2{
+        color: #695AA6;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact > .container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact > .container > .container-header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact > .container > .container-header > div {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact > .container > .container-header > .div-left {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 6rem;
+        font-family: Sancoale-bold;
+        color: #695AA6;
+        font-size: 2rem;
+    }
+
+    .contact > .container > .container-header > div > ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none; 
+        font-weight: bold;
+    }
+
+    .contact > .container > .container-footer{
+        width: 50%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact > .container > .container-footer > textarea{
+        width: 100%;
+        height: 60%;
+        padding: 1rem;
+    }
+
+    .contact > .container > .container-footer > button{
+        width: 6.5rem;
+        height: 2rem;
+        padding: 0.5rem;
+        background-color: whitesmoke;
+        border: solid 1.5px #695AA6;
+        color: #695AA6;
+        border-radius: 2px;
+        font-family: Sancoale-bold;
+    }
+/*  section Contact fin */
+
+/* footer début */
+    footer{
+        width: 80%;
+        height: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 1px lightgray;
+    }
+
+    footer > .div-social{
+        width: 22%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer > .div-social > span{
+        border: solid 3px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+/* footer fin */
+
+/* media query telephone */
+
+@media screen and (max-width: 425px){
+    .about-div-one > img{
+        opacity: 25%;
+    }
+
+    .portfolio{
+        height: 80vh;
+    }
+
+    .portfolio > .container {
+        width: 50%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .portfolio > .container > div {
+        width: 75%;
+    }
+
+    .pricing > .container > div > div > h2 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-div-price > p {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .pricing-div-footer > button{
+        padding: 5%;
+    }
+
+    .work > div {
+        width: 40%;
+    }
+
+    .work > div > button{
+        border: none;
+        padding: 2% 3% 2% 3%;
+        border-radius:5px;
+        font-family: Sancoale-bold;
+        margin-right: 0;
+    }
+
+    .testmonial > .container > .card > .div-img{
+        display:none;
+    }
+
+    .div-text{
+        font-size: 0.5rem;
+        right:0;
+    }
+
+    .contact{
+        margin-top: 4rem;
+    }
+
+    .contact > .container > .container-header > div {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .contact > .container > .container-header > .div-left {
+        margin-left: 0;
+        width: 30%;
+    }
+
+    .contact > .container > .container-header > div > ul{
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    footer{
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    footer > div {
+        height: 90%;
+        width:30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer > .div-social{
+        width: 60%;
+    }
+}
+
+/* media query tablette */
+
+@media (min-width: 425px) and (max-width: 1024px){
+    
+    .testmonial > .container > .card > .div-img{
+        display:none;
+    }
+
+    .div-text{
+        right:0;
+    }
+
+    .blog > .container > .card{
+        width: 100%;
+        height: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 1px lightgray;
+    }
+
+    .blog > .container > .card > .div-text > div{
+        align-items: center;
+    }
+
+    .blog > .container > .card > .div-text > .div-text-body{
+        width: 80%;
+        line-height: 1;
+        font-size: 14px;
+    }
+    
+    
+    .contact > .container > .container-header > div {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    footer{
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    footer > .div-social{
+        width: 40%;
+    }
+}
