@@ -47,3 +47,9 @@ Ce dépôt contient mon projet final intitulé **"Nouilles"**, réalisé pour va
 2. **Publier ici :**
 
     [Site publié](https://alexandrethedwarf.github.io/Nouilles-VandewieleAlexandre/)    
+
+## Aprés code review point à améliorer pour prochain projet :
+
+- **classes** : plus d'utilisation de classe pour élément ayant les mêmes propriétés css.
+- **responsive mobile** : plus de pensée utilisateur, ne pas hésiter a mettre les div en colonnes en row sur mobile.
+

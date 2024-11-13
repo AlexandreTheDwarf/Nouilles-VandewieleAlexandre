@@ -34,9 +34,11 @@ section{
         height: 80vh;
         width: 100%;
         /*Background CSS début*/
-            background-image: url(../img/header.jpg);
+            /* background-image: url(../img/header.jpg); */
+            background-image: url(../img/header.png);
             background-repeat: no-repeat;
-            background-position-y: 45%;
+            background-position: center;
+            /* background-position-y: 45%; */
             background-size: cover;
         /*Background CSS fin*/
         /* Display début */
@@ -79,6 +81,13 @@ section{
         padding: 2% 3% 2% 3%;
         color: whitesmoke;
         margin-top: 5%;
+        transition: ease-in-out 0.5s;
+    }
+
+    header > div > button:hover {
+        color: #695AA6;
+        border: solid 1px #695AA6;
+        background-color: whitesmoke;
     }
 
 /* header fin */
@@ -135,6 +144,13 @@ section{
         border-color: #695AA6;
         border-radius: 20px;
         padding: 1.5% 3% 1.5% 3%;
+        transition: ease-in-out 0.5s;
+    }
+
+    .about-div-two > button:hover{
+        color: whitesmoke;
+        background-color: #695AA6;
+        border-color: whitesmoke;
     }
 
 /* section about fin */
@@ -309,6 +325,13 @@ section{
         color: whitesmoke;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        transition: ease-in-out 0.5s;
+    }
+
+    .pricing-div-footer > button:hover {
+        color: #695AA6;
+        border: solid 1px #695AA6;
+        background-color: whitesmoke;
     }
 
 /* section Pricing fin */
@@ -341,6 +364,11 @@ section{
         border-radius:5px;
         font-family: Sancoale-bold;
         margin-right: 12rem;
+        transition: ease-in-out 0.5s;
+    }
+
+    .work > div > button:hover{
+        transform: scale(130%);
     }
 
 /* section work with me fin */
@@ -625,6 +653,13 @@ section{
         border-radius: 2px;
         font-family: Sancoale-bold;
     }
+
+    .contact > .container > .container-footer > button:hover{
+        color: whitesmoke;
+        background-color: #695AA6;
+        border-color: whitesmoke;
+    }
+    
 /*  section Contact fin */
 
 /* footer début */
@@ -660,7 +695,7 @@ section{
 
 /* media query telephone */
 
-@media screen and (max-width: 425px){
+@media (max-width: 425px){
     .about-div-one > img{
         opacity: 25%;
     }
